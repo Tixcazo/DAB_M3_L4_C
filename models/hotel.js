@@ -3,8 +3,7 @@ module.exports = (sequelize, Sequelize) => {
         Name: Sequelize.DataTypes.STRING,
         Location: Sequelize.DataTypes.STRING
     },{
-        timestamps: false,
-        tableName: 'hotels'
+        timestamps: false
     });
     Hotel.associate = function(models) {
         Hotel.hasMany(models.Room);
